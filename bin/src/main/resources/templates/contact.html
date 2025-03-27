@@ -1,0 +1,34 @@
+<div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+
+<h3>Liste Contact</h3>
+
+<form th:action="@{/contact/addcontact}" method="POST">
+	<input type="text" name="usernametoadd">
+	<input type="submit" value="Ajouter contact">
+</form>
+
+
+
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>firstname</th>
+		<th>lastname</th>
+		<th>email</th>
+		<!-- ajout argent recu en envoyé  -->
+	</tr>
+	<tr th:each="utilisateur : ${contacts}">
+		<td th:text="${utilisateur.id}"></td>
+		<td th:text="${utilisateur.firstName}"></td>
+		<td th:text="${utilisateur.lastName}"></td>
+		<td th:text="${utilisateur.email}"></td>
+		<td>
+		<form th:action="@{'/contact/deletecontact?id='+${utilisateur.id}}"  method="POST">
+			<input type="submit" value="delete">
+		</form>
+	</tr>
+	
+	
+	
+</table>

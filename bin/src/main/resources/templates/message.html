@@ -1,0 +1,10 @@
+ <div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+ 
+ <ul th:each="message : ${messages}">
+ 	<li> <span th:text="${message.content}"/> <span th:text="${message.reponse}"/>
+ </ul>
+ 
+<form th:action="@{/message/addmessage}" method="POST">
+	<input type="text" name="messagecontent">
+	<input type="submit" value=" contact">
+</form>

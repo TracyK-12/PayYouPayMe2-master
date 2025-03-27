@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>PayYouPayMe - Messages</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<style>
+body {
+    background-color: #6f7754;
+    font-family: Arial, sans-serif;
+
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: hsl(85, 67%, 77%);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #9ab927;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pousse les liens à droite */
+}
+
+/* Style pour les liens du menu */
+nav a {
+    color: black;
+    margin: 0 15px; /* Espacement entre les liens */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd; /* Changer la couleur au survol */
+}
+
+/* Styles des messages */
+.message-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Formulaire */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+</style>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PayYouPayMe</a>
+            <div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+        </div>
+    </nav>
+
+    <h2>Messages</h2>
+
+    <!-- Liste des messages -->
+    <div class="message-container">
+        <ul class="list-group" th:if="${messages != null and not #lists.isEmpty(messages)}">
+            <li class="list-group-item" th:each="message : ${messages}">
+                <strong>Message :</strong> <span th:text="${message.content}"></span><br>
+                <strong>Réponse :</strong> <span th:text="${message.reponse}"></span>
+            </li>
+        </ul>
+        <p class="text-center text-muted" th:if="${messages == null or #lists.isEmpty(messages)}">Aucun message disponible.</p>
+    </div>
+
+    <!-- Formulaire d'ajout de message -->
+    <form th:action="@{/message/addmessage}" method="POST">
+        <input type="text" name="messagecontent" placeholder="Écrivez votre message..." required>
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

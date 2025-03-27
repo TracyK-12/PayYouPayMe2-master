@@ -1,0 +1,70 @@
+<div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+
+<h1>Page Utilisateur</h1>
+
+<h2 th:text="${userToDisplay.username}"></h2>
+<br>
+
+<ul th:each="message : ${userToDisplay.messageSent}">
+	<li><span th:text="${message.content} + ', ' + ${message.date}"></span></li>
+</ul>
+<br>
+
+<h3>Liste Contact</h3>
+<table>
+	<tr>
+		<th>ID</th>
+		<th>firstname</th>
+		<th>lastname</th>
+		<th>email</th>
+		<!-- ajout argent recu en envoyé  -->
+	</tr>
+	<tr th:each="utilisateur : ${userToDisplay.contact}">
+		<td th:text="${utilisateur.id}"></td>
+		<td th:text="${utilisateur.firstName}"></td>
+		<td th:text="${utilisateur.lastName}"></td>
+		<td th:text="${utilisateur.email}"></td>
+	</tr>
+	
+	
+	
+</table>
+
+<h2>Liste tansactions envoyées</h2>
+<table>
+	<tr>
+		<th>ID</th>
+		<th>amount</th>
+		<th>message</th>
+		<th>date</th>
+		<th>reciever</th>
+		
+		<!-- ajout argent recu en envoyé  -->
+	</tr>
+	
+	<tr th:each="transaction : ${userToDisplay.transactionSent}">
+		<td th:text="${transaction.id}"></td>
+		<td th:text="${transaction.amount}"></td>
+		<td th:text="${transaction.messageContent}"></td>
+		<td th:text="${transaction.date}"></td>
+		<td th:text="${transaction.reciever.username}"></td>
+
+	</tr>
+</table>
+
+<br>
+
+<h2>Modification User</h2>
+
+<form th:action="@{/me/user/saveutilisateur}" method="POST"
+	 th:object="${userToDisplay}">
+	<input type="hidden" name="id" th:field="*{id}"> 
+	<input type="text" name="lastname" th:field="*{lastName}"> <br>
+	<input type="text" name="fistname" th:field="*{firstName}"> <br>
+	<input type="text" name="email" th:field="*{email}"> <br>
+	<input type="submit" value="Modifier"> <br>
+</form>
+
+<form th:action="@{/me/user/suspendrecompte}" method="POST">
+	<input type="submit" value="Suspendre compte?">
+</form>

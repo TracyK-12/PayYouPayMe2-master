@@ -1,0 +1,37 @@
+<div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+ 
+<div th:text="'balance : ' + ${utilisateur.balance}"></div>
+ 
+<form th:action="@{/transaction/createtransaction}" method="POST">
+	<select name="reciever">
+		<option th:each="contacttoselect : ${utilisateur.contact}"
+		 th:value="${contacttoselect.username}"
+		 th:text="${contacttoselect.username}">
+	</select>
+	<input type="text" name="content" value = "message"> 
+	<input type="number" name="amount" value = "message">
+	
+	<input type="submit" value="Creation transaction">
+</form> 
+ 
+<h2>Liste transactions envoyées</h2>
+<table>
+	<tr>
+		<th>ID</th>
+		<th>amount</th>
+		<th>message</th>
+		<th>date</th>
+		<th>reciever</th>
+		
+		<!-- ajout argent recu en envoyé  -->
+	</tr>
+	
+	<tr th:each="transaction : ${utilisateur.transactionSent}">
+		<td th:text="${transaction.id}"></td>
+		<td th:text="${transaction.amount}"></td>
+		<td th:text="${transaction.messageContent}"></td>
+		<td th:text="${transaction.date}"></td>
+		<td th:text="${transaction.reciever.username}"></td>
+
+	</tr>
+</table>

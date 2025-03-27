@@ -1,0 +1,691 @@
+2025-03-20 08:56:39 - HikariPool-11 - Thread starvation or clock leap detected (housekeeper delta=8h47m51s869ms870µs900ns).
+2025-03-20 10:03:27 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 18392 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 10:03:27 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 10:03:28 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 10:03:28 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 10:03:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 10:03:28 - Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
+2025-03-20 10:03:29 - Tomcat initialized with port 8081 (http)
+2025-03-20 10:03:29 - Starting service [Tomcat]
+2025-03-20 10:03:29 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 10:03:29 - Initializing Spring embedded WebApplicationContext
+2025-03-20 10:03:29 - Root WebApplicationContext: initialization completed in 1883 ms
+2025-03-20 10:03:30 - HikariPool-1 - Starting...
+2025-03-20 10:03:30 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 10:03:30 - HikariPool-1 - Start completed.
+2025-03-20 10:03:30 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 10:03:30 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20 10:03:30 - HHH000026: Second-level cache disabled
+2025-03-20 10:03:31 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 10:03:31 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 10:03:31 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 10:03:32 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 10:03:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 10:03:32 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20 10:03:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 10:03:33 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 10:03:34 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 10:03:34 - Unable to start LiveReload server
+2025-03-20 10:03:34 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-03-20 10:03:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 10:03:34 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 10:03:34 - HikariPool-1 - Shutdown initiated...
+2025-03-20 10:03:34 - HikariPool-1 - Shutdown completed.
+2025-03-20 10:03:34 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-20 10:03:34 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-03-20 10:03:43 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 21252 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 10:03:43 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 10:03:43 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 10:03:43 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 10:03:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 10:03:44 - Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2025-03-20 10:03:45 - Tomcat initialized with port 8081 (http)
+2025-03-20 10:03:45 - Starting service [Tomcat]
+2025-03-20 10:03:45 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 10:03:45 - Initializing Spring embedded WebApplicationContext
+2025-03-20 10:03:45 - Root WebApplicationContext: initialization completed in 1751 ms
+2025-03-20 10:03:45 - HikariPool-1 - Starting...
+2025-03-20 10:03:45 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 10:03:45 - HikariPool-1 - Start completed.
+2025-03-20 10:03:45 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 10:03:46 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20 10:03:46 - HHH000026: Second-level cache disabled
+2025-03-20 10:03:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 10:03:46 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 10:03:46 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 10:03:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 10:03:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 10:03:47 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20 10:03:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 10:03:48 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 10:03:49 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 10:03:49 - LiveReload server is running on port 35729
+2025-03-20 10:03:49 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 10:03:49 - Started PayYouPayMeApplication in 6.843 seconds (process running for 7.362)
+2025-03-20 10:04:00 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 10:04:00 - Initializing Servlet 'dispatcherServlet'
+2025-03-20 10:04:00 - Completed initialization in 1 ms
+2025-03-20 10:07:18 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-20 10:07:18 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 10:07:18 - Graceful shutdown complete
+2025-03-20 10:07:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 10:07:18 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 10:07:18 - HikariPool-1 - Shutdown initiated...
+2025-03-20 10:07:18 - HikariPool-1 - Shutdown completed.
+2025-03-20 10:07:18 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 21252 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 10:07:18 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 10:07:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 10:07:18 - Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-03-20 10:07:18 - Tomcat initialized with port 8081 (http)
+2025-03-20 10:07:18 - Starting service [Tomcat]
+2025-03-20 10:07:18 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 10:07:18 - Initializing Spring embedded WebApplicationContext
+2025-03-20 10:07:18 - Root WebApplicationContext: initialization completed in 357 ms
+2025-03-20 10:07:18 - HikariPool-2 - Starting...
+2025-03-20 10:07:18 - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 10:07:18 - HikariPool-2 - Start completed.
+2025-03-20 10:07:18 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 10:07:18 - HHH000026: Second-level cache disabled
+2025-03-20 10:07:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 10:07:18 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 10:07:18 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 10:07:18 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 10:07:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 10:07:19 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 10:07:19 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 10:07:19 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 10:07:19 - LiveReload server is running on port 35729
+2025-03-20 10:07:19 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 10:07:19 - Started PayYouPayMeApplication in 0.785 seconds (process running for 216.856)
+2025-03-20 10:07:19 - Condition evaluation unchanged
+2025-03-20 10:10:51 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 22480 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 10:10:51 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 10:10:52 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 10:10:52 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 10:10:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 10:10:52 - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2025-03-20 10:10:53 - Tomcat initialized with port 8081 (http)
+2025-03-20 10:10:53 - Starting service [Tomcat]
+2025-03-20 10:10:53 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 10:10:53 - Initializing Spring embedded WebApplicationContext
+2025-03-20 10:10:53 - Root WebApplicationContext: initialization completed in 1655 ms
+2025-03-20 10:10:53 - HikariPool-1 - Starting...
+2025-03-20 10:10:54 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 10:10:54 - HikariPool-1 - Start completed.
+2025-03-20 10:10:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 10:10:54 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20 10:10:54 - HHH000026: Second-level cache disabled
+2025-03-20 10:10:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 10:10:55 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 10:10:55 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 10:10:55 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 10:10:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 10:10:56 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20 10:10:57 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 10:10:57 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 10:10:58 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 10:10:58 - LiveReload server is running on port 35729
+2025-03-20 10:10:58 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 10:10:58 - Started PayYouPayMeApplication in 6.804 seconds (process running for 7.231)
+2025-03-20 10:11:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 10:11:03 - Initializing Servlet 'dispatcherServlet'
+2025-03-20 10:11:03 - Completed initialization in 1 ms
+2025-03-20 11:53:26 - Tentative de création d'une transaction
+2025-03-20 11:53:30 - Tentative de création d'une transaction
+2025-03-20 11:53:35 - Tentative de création d'une transaction
+2025-03-20 11:53:41 - Tentative de création d'une transaction
+2025-03-20 11:55:02 - Tentative de création d'une transaction
+2025-03-20 11:55:39 - Connect to allDatas!
+2025-03-20 11:57:05 - Connect to allDatas!
+2025-03-20 11:58:44 - Connect to allDatas!
+2025-03-20 12:06:34 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-20 12:06:34 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 12:06:34 - Graceful shutdown complete
+2025-03-20 12:06:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 12:06:34 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 12:06:34 - HikariPool-1 - Shutdown initiated...
+2025-03-20 12:06:34 - HikariPool-1 - Shutdown completed.
+2025-03-20 12:06:34 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 22480 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 12:06:34 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 12:06:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 12:06:35 - Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2025-03-20 12:06:35 - Tomcat initialized with port 8081 (http)
+2025-03-20 12:06:35 - Starting service [Tomcat]
+2025-03-20 12:06:35 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 12:06:35 - Initializing Spring embedded WebApplicationContext
+2025-03-20 12:06:35 - Root WebApplicationContext: initialization completed in 533 ms
+2025-03-20 12:06:35 - HikariPool-2 - Starting...
+2025-03-20 12:06:35 - HikariPool-2 - Added connection conn41: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 12:06:35 - HikariPool-2 - Start completed.
+2025-03-20 12:06:35 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 12:06:35 - HHH000026: Second-level cache disabled
+2025-03-20 12:06:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 12:06:35 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 12:06:35 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 12:06:35 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 12:06:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 12:06:35 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 12:06:35 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 12:06:36 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 12:06:36 - LiveReload server is running on port 35729
+2025-03-20 12:06:36 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 12:06:36 - Started PayYouPayMeApplication in 1.529 seconds (process running for 6945.071)
+2025-03-20 12:06:36 - Condition evaluation unchanged
+2025-03-20 12:06:37 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-20 12:06:37 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 12:06:37 - Graceful shutdown complete
+2025-03-20 12:06:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 12:06:37 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 12:06:37 - HikariPool-2 - Shutdown initiated...
+2025-03-20 12:06:37 - HikariPool-2 - Shutdown completed.
+2025-03-20 12:06:37 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 22480 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 12:06:37 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 12:06:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 12:06:37 - Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2025-03-20 12:06:37 - Tomcat initialized with port 8081 (http)
+2025-03-20 12:06:37 - Starting service [Tomcat]
+2025-03-20 12:06:37 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 12:06:37 - Initializing Spring embedded WebApplicationContext
+2025-03-20 12:06:37 - Root WebApplicationContext: initialization completed in 325 ms
+2025-03-20 12:06:37 - HikariPool-3 - Starting...
+2025-03-20 12:06:37 - HikariPool-3 - Added connection conn51: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 12:06:37 - HikariPool-3 - Start completed.
+2025-03-20 12:06:37 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 12:06:37 - HHH000026: Second-level cache disabled
+2025-03-20 12:06:37 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 12:06:37 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 12:06:37 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 12:06:38 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 12:06:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 12:06:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 12:06:38 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 12:06:38 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 12:06:38 - LiveReload server is running on port 35729
+2025-03-20 12:06:38 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 12:06:38 - Started PayYouPayMeApplication in 0.702 seconds (process running for 6947.253)
+2025-03-20 12:06:38 - Condition evaluation unchanged
+2025-03-20 12:13:48 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-20 12:13:48 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 12:13:48 - Graceful shutdown complete
+2025-03-20 12:13:48 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 12:13:48 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 12:13:48 - HikariPool-3 - Shutdown initiated...
+2025-03-20 12:13:48 - HikariPool-3 - Shutdown completed.
+2025-03-20 12:13:48 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 22480 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 12:13:48 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 12:13:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 12:13:48 - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-03-20 12:13:49 - Tomcat initialized with port 8081 (http)
+2025-03-20 12:13:49 - Starting service [Tomcat]
+2025-03-20 12:13:49 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 12:13:49 - Initializing Spring embedded WebApplicationContext
+2025-03-20 12:13:49 - Root WebApplicationContext: initialization completed in 294 ms
+2025-03-20 12:13:49 - HikariPool-4 - Starting...
+2025-03-20 12:13:49 - HikariPool-4 - Added connection conn61: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 12:13:49 - HikariPool-4 - Start completed.
+2025-03-20 12:13:49 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 12:13:49 - HHH000026: Second-level cache disabled
+2025-03-20 12:13:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 12:13:49 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 12:13:49 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 12:13:49 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 12:13:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 12:13:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 12:13:49 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 12:13:49 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 12:13:49 - LiveReload server is running on port 35729
+2025-03-20 12:13:49 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 12:13:49 - Started PayYouPayMeApplication in 0.654 seconds (process running for 7378.397)
+2025-03-20 12:13:49 - Condition evaluation unchanged
+2025-03-20 13:28:53 - HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1h5m34s236ms164µs600ns).
+2025-03-20 13:49:35 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 28988 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 13:49:35 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 13:49:35 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 13:49:35 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 13:49:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 13:49:36 - Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
+2025-03-20 13:49:37 - Tomcat initialized with port 8081 (http)
+2025-03-20 13:49:37 - Starting service [Tomcat]
+2025-03-20 13:49:37 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 13:49:37 - Initializing Spring embedded WebApplicationContext
+2025-03-20 13:49:37 - Root WebApplicationContext: initialization completed in 2480 ms
+2025-03-20 13:49:38 - HikariPool-1 - Starting...
+2025-03-20 13:49:38 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 13:49:38 - HikariPool-1 - Start completed.
+2025-03-20 13:49:38 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 13:49:38 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20 13:49:38 - HHH000026: Second-level cache disabled
+2025-03-20 13:49:39 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 13:49:39 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 13:49:39 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 13:49:40 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 13:49:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 13:49:41 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20 13:49:42 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 13:49:42 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 13:49:44 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 13:49:44 - LiveReload server is running on port 35729
+2025-03-20 13:49:44 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 13:49:44 - Started PayYouPayMeApplication in 10.044 seconds (process running for 10.999)
+2025-03-20 13:49:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 13:49:49 - Initializing Servlet 'dispatcherServlet'
+2025-03-20 13:49:49 - Completed initialization in 3 ms
+2025-03-20 13:51:56 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 29436 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 13:51:56 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 13:51:56 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 13:51:56 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 13:51:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 13:51:57 - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2025-03-20 13:51:58 - Tomcat initialized with port 8081 (http)
+2025-03-20 13:51:58 - Starting service [Tomcat]
+2025-03-20 13:51:58 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 13:51:58 - Initializing Spring embedded WebApplicationContext
+2025-03-20 13:51:58 - Root WebApplicationContext: initialization completed in 2722 ms
+2025-03-20 13:51:59 - HikariPool-1 - Starting...
+2025-03-20 13:51:59 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 13:51:59 - HikariPool-1 - Start completed.
+2025-03-20 13:52:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 13:52:00 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20 13:52:00 - HHH000026: Second-level cache disabled
+2025-03-20 13:52:00 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 13:52:00 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 13:52:00 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 13:52:02 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 13:52:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 13:52:02 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20 13:52:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 13:52:04 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 13:52:05 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 13:52:06 - LiveReload server is running on port 35729
+2025-03-20 13:52:06 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 13:52:06 - Started PayYouPayMeApplication in 10.83 seconds (process running for 11.553)
+2025-03-20 13:52:09 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 13:52:09 - Initializing Servlet 'dispatcherServlet'
+2025-03-20 13:52:09 - Completed initialization in 6 ms
+2025-03-20 13:55:01 - Connect to allDatas!
+2025-03-20 13:56:00 - Connect to allDatas!
+2025-03-20 13:57:22 - Connect to allDatas!
+2025-03-20 14:00:46 - Connect to allDatas!
+2025-03-20 14:06:41 - Connect to allDatas!
+2025-03-20 14:08:56 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-20 14:08:56 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 14:08:56 - Graceful shutdown complete
+2025-03-20 14:08:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 14:08:56 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 14:08:56 - HikariPool-1 - Shutdown initiated...
+2025-03-20 14:08:56 - HikariPool-1 - Shutdown completed.
+2025-03-20 14:08:57 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 29436 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 14:08:57 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 14:08:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 14:08:57 - Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2025-03-20 14:08:57 - Tomcat initialized with port 8081 (http)
+2025-03-20 14:08:57 - Starting service [Tomcat]
+2025-03-20 14:08:57 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 14:08:57 - Initializing Spring embedded WebApplicationContext
+2025-03-20 14:08:57 - Root WebApplicationContext: initialization completed in 631 ms
+2025-03-20 14:08:57 - HikariPool-2 - Starting...
+2025-03-20 14:08:57 - HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 14:08:57 - HikariPool-2 - Start completed.
+2025-03-20 14:08:57 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 14:08:57 - HHH000026: Second-level cache disabled
+2025-03-20 14:08:57 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 14:08:57 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 14:08:57 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 14:08:58 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 14:08:58 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 14:08:58 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 14:08:58 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 14:08:58 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 14:08:58 - LiveReload server is running on port 35729
+2025-03-20 14:08:58 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 14:08:58 - Started PayYouPayMeApplication in 1.4 seconds (process running for 1023.9)
+2025-03-20 14:08:58 - Condition evaluation unchanged
+2025-03-20 14:12:24 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 18876 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 14:12:24 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 14:12:24 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 14:12:24 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 14:12:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 14:12:26 - Finished Spring Data repository scanning in 85 ms. Found 3 JPA repository interfaces.
+2025-03-20 14:12:27 - Tomcat initialized with port 8081 (http)
+2025-03-20 14:12:27 - Starting service [Tomcat]
+2025-03-20 14:12:27 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 14:12:27 - Initializing Spring embedded WebApplicationContext
+2025-03-20 14:12:27 - Root WebApplicationContext: initialization completed in 2650 ms
+2025-03-20 14:12:27 - HikariPool-1 - Starting...
+2025-03-20 14:12:28 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 14:12:28 - HikariPool-1 - Start completed.
+2025-03-20 14:12:28 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 14:12:28 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20 14:12:29 - HHH000026: Second-level cache disabled
+2025-03-20 14:12:29 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 14:12:29 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 14:12:29 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 14:12:31 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 14:12:31 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 14:12:31 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20 14:12:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 14:12:33 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-03-20 14:12:34 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 14:12:34 - LiveReload server is running on port 35729
+2025-03-20 14:12:34 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 14:12:34 - Started PayYouPayMeApplication in 10.755 seconds (process running for 11.533)
+2025-03-20 14:12:40 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 14:12:40 - Initializing Servlet 'dispatcherServlet'
+2025-03-20 14:12:40 - Completed initialization in 3 ms
+2025-03-20 14:12:45 - Connect to allDatas!
+2025-03-20 14:14:14 - Connect to allDatas!
+2025-03-20 14:14:29 - Connect to allDatas!
+2025-03-20 14:23:42 - Connect to allDatas!
+2025-03-20 14:24:46 - Connect to allDatas!
+2025-03-20 14:33:32 - Connect to allDatas!
+2025-03-20 14:33:50 - Connect to allDatas!
+2025-03-20 16:23:48 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 27640 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 16:23:48 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 16:23:48 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 16:23:48 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 16:23:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 16:23:49 - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2025-03-20 16:23:49 - Tomcat initialized with port 8081 (http)
+2025-03-20 16:23:49 - Starting service [Tomcat]
+2025-03-20 16:23:49 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 16:23:49 - Initializing Spring embedded WebApplicationContext
+2025-03-20 16:23:49 - Root WebApplicationContext: initialization completed in 1733 ms
+2025-03-20 16:23:50 - HikariPool-1 - Starting...
+2025-03-20 16:23:50 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 16:23:50 - HikariPool-1 - Start completed.
+2025-03-20 16:23:50 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 16:23:50 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20 16:23:51 - HHH000026: Second-level cache disabled
+2025-03-20 16:23:51 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 16:23:51 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 16:23:51 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 16:23:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 16:23:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 16:23:52 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20 16:23:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 16:23:53 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-03-20 16:23:54 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 16:23:54 - LiveReload server is running on port 35729
+2025-03-20 16:23:54 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 16:23:54 - Started PayYouPayMeApplication in 7.256 seconds (process running for 7.778)
+2025-03-20 16:24:00 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 16:24:00 - Initializing Servlet 'dispatcherServlet'
+2025-03-20 16:24:00 - Completed initialization in 1 ms
+2025-03-20 16:24:52 - Connect to allDatas!
+2025-03-20 16:25:01 - Connect to allDatas!
+2025-03-20 16:26:52 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-20 16:26:52 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 16:26:52 - Graceful shutdown complete
+2025-03-20 16:26:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 16:26:52 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 16:26:52 - HikariPool-1 - Shutdown initiated...
+2025-03-20 16:26:52 - HikariPool-1 - Shutdown completed.
+2025-03-20 16:26:52 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 27640 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 16:26:52 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 16:26:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 16:26:53 - Finished Spring Data repository scanning in 15 ms. Found 3 JPA repository interfaces.
+2025-03-20 16:26:53 - Tomcat initialized with port 8081 (http)
+2025-03-20 16:26:53 - Starting service [Tomcat]
+2025-03-20 16:26:53 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 16:26:53 - Initializing Spring embedded WebApplicationContext
+2025-03-20 16:26:53 - Root WebApplicationContext: initialization completed in 341 ms
+2025-03-20 16:26:53 - HikariPool-2 - Starting...
+2025-03-20 16:26:53 - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 16:26:53 - HikariPool-2 - Start completed.
+2025-03-20 16:26:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 16:26:53 - HHH000026: Second-level cache disabled
+2025-03-20 16:26:53 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 16:26:53 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 16:26:53 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 16:26:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 16:26:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 16:26:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 16:26:53 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-03-20 16:26:53 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 16:26:53 - LiveReload server is running on port 35729
+2025-03-20 16:26:53 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 16:26:53 - Started PayYouPayMeApplication in 0.736 seconds (process running for 186.742)
+2025-03-20 16:26:53 - Condition evaluation unchanged
+2025-03-20 16:26:59 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 16:26:59 - Initializing Servlet 'dispatcherServlet'
+2025-03-20 16:26:59 - Completed initialization in 1 ms
+2025-03-20 16:28:32 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-20 16:28:32 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 16:28:32 - Graceful shutdown complete
+2025-03-20 16:28:32 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 16:28:32 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 16:28:32 - HikariPool-2 - Shutdown initiated...
+2025-03-20 16:28:32 - HikariPool-2 - Shutdown completed.
+2025-03-20 16:28:33 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 27640 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 16:28:33 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 16:28:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 16:28:33 - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+2025-03-20 16:28:33 - Tomcat initialized with port 8081 (http)
+2025-03-20 16:28:33 - Starting service [Tomcat]
+2025-03-20 16:28:33 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 16:28:33 - Initializing Spring embedded WebApplicationContext
+2025-03-20 16:28:33 - Root WebApplicationContext: initialization completed in 332 ms
+2025-03-20 16:28:33 - HikariPool-3 - Starting...
+2025-03-20 16:28:33 - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 16:28:33 - HikariPool-3 - Start completed.
+2025-03-20 16:28:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 16:28:33 - HHH000026: Second-level cache disabled
+2025-03-20 16:28:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 16:28:33 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 16:28:33 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 16:28:33 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 16:28:33 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 16:28:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 16:28:33 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-03-20 16:28:33 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 16:28:33 - LiveReload server is running on port 35729
+2025-03-20 16:28:33 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 16:28:33 - Started PayYouPayMeApplication in 0.675 seconds (process running for 286.788)
+2025-03-20 16:28:33 - Condition evaluation unchanged
+2025-03-20 16:29:10 - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-20 16:29:10 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-20 16:29:10 - Graceful shutdown complete
+2025-03-20 16:29:10 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 16:29:10 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-03-20 16:29:10 - HikariPool-3 - Shutdown initiated...
+2025-03-20 16:29:10 - HikariPool-3 - Shutdown completed.
+2025-03-20 16:29:10 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 27640 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 16:29:10 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 16:29:10 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 16:29:10 - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+2025-03-20 16:29:11 - Tomcat initialized with port 8081 (http)
+2025-03-20 16:29:11 - Starting service [Tomcat]
+2025-03-20 16:29:11 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 16:29:11 - Initializing Spring embedded WebApplicationContext
+2025-03-20 16:29:11 - Root WebApplicationContext: initialization completed in 262 ms
+2025-03-20 16:29:11 - HikariPool-4 - Starting...
+2025-03-20 16:29:11 - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 16:29:11 - HikariPool-4 - Start completed.
+2025-03-20 16:29:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 16:29:11 - HHH000026: Second-level cache disabled
+2025-03-20 16:29:11 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 16:29:11 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 16:29:11 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 16:29:11 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 16:29:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 16:29:11 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 16:29:11 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-03-20 16:29:11 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 16:29:11 - LiveReload server is running on port 35729
+2025-03-20 16:29:11 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 16:29:11 - Started PayYouPayMeApplication in 0.585 seconds (process running for 324.399)
+2025-03-20 16:29:11 - Condition evaluation unchanged
+2025-03-20 16:42:27 - Starting PayYouPayMeApplication using Java 21.0.2 with PID 43836 (C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe\target\classes started by desch in C:\Users\desch\Downloads\PayYouPayMe\PayYouPayMe)
+2025-03-20 16:42:27 - No active profile set, falling back to 1 default profile: "default"
+2025-03-20 16:42:27 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-20 16:42:27 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-20 16:42:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-20 16:42:28 - Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2025-03-20 16:42:28 - Tomcat initialized with port 8081 (http)
+2025-03-20 16:42:28 - Starting service [Tomcat]
+2025-03-20 16:42:28 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-20 16:42:29 - Initializing Spring embedded WebApplicationContext
+2025-03-20 16:42:29 - Root WebApplicationContext: initialization completed in 1750 ms
+2025-03-20 16:42:29 - HikariPool-1 - Starting...
+2025-03-20 16:42:29 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pypm user=ROOT
+2025-03-20 16:42:29 - HikariPool-1 - Start completed.
+2025-03-20 16:42:29 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-20 16:42:30 - HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-20 16:42:30 - HHH000026: Second-level cache disabled
+2025-03-20 16:42:30 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-20 16:42:30 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-20 16:42:30 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-20 16:42:31 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-20 16:42:31 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-20 16:42:31 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-20 16:42:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-20 16:42:32 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-03-20 16:42:33 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pypm'
+2025-03-20 16:42:33 - LiveReload server is running on port 35729
+2025-03-20 16:42:33 - Tomcat started on port 8081 (http) with context path '/'
+2025-03-20 16:42:33 - Started PayYouPayMeApplication in 7.239 seconds (process running for 7.71)
+2025-03-20 16:42:38 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-20 16:42:38 - Initializing Servlet 'dispatcherServlet'
+2025-03-20 16:42:38 - Completed initialization in 1 ms
+2025-03-20 16:42:59 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'amount' for method parameter type Float is present but converted to null]
+2025-03-20 16:43:07 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'amount' for method parameter type Float is present but converted to null]
+2025-03-20 16:43:18 - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'amount' for method parameter type Float is present but converted to null]
+2025-03-20 19:07:30 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h24m1s592ms468µs700ns).
+2025-03-20 19:57:20 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m49s798ms954µs900ns).
+2025-03-20 22:17:19 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m27s12ms774µs400ns).

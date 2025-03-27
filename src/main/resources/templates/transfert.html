@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>PayYouPayMe - Transferts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<style>
+body {
+    background-color: #6f7754;
+    font-family: Arial, sans-serif;
+  
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: hsl(85, 67%, 77%);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #9ab927;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+/* Style des liens du menu */
+nav a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+/* Section des formulaires */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style des titres */
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+/* Style des tableaux */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+</style>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PayYouPayMe</a>
+            <div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+        </div>
+    </nav>
+
+    <h2>Transferts</h2>
+
+    <!-- Formulaire de création de transfert -->
+    <form th:action="@{/transfert/createTransfert}" method="POST">
+        <input type="text" name="content" placeholder="Message" required>
+        <input type="number" name="amount" placeholder="Montant" min="1" required>
+        <input type="submit" value="Créer un transfert">
+    </form> 
+
+    <h2>Liste des transferts effectués</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Montant</th>
+            <th>Message</th>
+            <th>Date</th>
+        </tr>
+        <tr th:each="transfert : ${utilisateur.transferts}">
+            <td th:text="${transfert.id}"></td>
+            <td th:text="${transfert.amount} + ' €'"></td>
+            <td th:text="${transfert.messageContent}"></td>
+            <td th:text="${transfert.date}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

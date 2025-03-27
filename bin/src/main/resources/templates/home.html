@@ -1,0 +1,10 @@
+ <div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+ 
+ <div>
+	<form th:action="@{/signUp}" method="POST">
+		<input type="text" name="userName">
+		<input type="text" name="password">
+		<input type="submit" value="Créer compte">
+	</form>
+
+ </div>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>PayYouPayMe - Accueil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<style>
+body {
+    background-color: #6f7754;
+    font-family: Arial, sans-serif;
+   
+}
+
+/* Style de la barre de navigation */
+.navbar {
+    background-color: hsl(85, 67%, 77%);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #9ab927;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pousse les liens à droite */
+}
+
+/* Style pour les liens du menu */
+nav a {
+    color: black;
+    margin: 0 15px; /* Espacement entre les liens */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd; /* Changer la couleur au survol */
+}
+
+/* Section des formulaires */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+form select,
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style des titres */
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+/* Style des tableaux */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+</style>
+
+<body>
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Texte à gauche : "PayYouPayMe" -->
+            <a class="navbar-brand" href="#">PayYouPayMe</a>
+
+            <!-- Contenu du menu à droite -->
+            <div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+        </div>
+    </nav>
+
+    <!-- Affichage du solde -->
+    <div th:text="'Balance: ' + ${utilisateur.balance}" class="text-center text-white mb-4" style="font-size: 1.5rem;"></div>
+
+    <!-- Formulaire de création de transaction -->
+    <form th:action="@{/transaction/createtransaction}" method="POST">
+        <select name="reciever">
+            <option th:each="contacttoselect : ${utilisateur.contact}" 
+                    th:value="${contacttoselect.username}" 
+                    th:text="${contacttoselect.username}">
+            </option>
+        </select>
+        <input type="text" name="content" value="message" placeholder="Message" />
+        <input type="number" name="amount" value="message" placeholder="Montant" />
+        <input type="submit" value="Créer une transaction" />
+    </form>
+
+    <!-- Liste des transactions envoyées -->
+    <h2>Liste des transactions envoyées</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Montant</th>
+            <th>Message</th>
+            <th>Date</th>
+            <th>Destinataire</th>
+        </tr>
+        <tr th:each="transaction : ${utilisateur.transactionSent}">
+            <td th:text="${transaction.id}"></td>
+            <td th:text="${transaction.amount}"></td>
+            <td th:text="${transaction.messageContent}"></td>
+            <td th:text="${transaction.date}"></td>
+            <td th:text="${transaction.reciever.username}"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

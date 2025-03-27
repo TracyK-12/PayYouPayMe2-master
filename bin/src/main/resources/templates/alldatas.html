@@ -1,0 +1,107 @@
+<div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+
+<h1>ALL DATAS</h1>
+
+
+<h2>MESSAGES</h2>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Content</th>
+		<th>Date</th>
+		<th>Utilisateur name</th>
+		<th>Reponse</th>
+	</tr>
+	<tr th:each="message : ${messages}">
+		<td th:text="${message.id}" />
+		<td th:text="${message.content}" />
+		<td th:text="${message.date}" />
+		<td th:text="${message.utilisateur.username}" />
+		<td><span th:if="${ message.reponse == null }">
+				<form th:action="@{'/admin/reponse?id=' + ${message.id}}"
+					method="POST">
+					<input type="text" name="content"> <input type="submit"
+						value="Repondre au message">
+				</form>
+		</span> <span th:unless="${ message.reponse == null }"> <span
+				th:text="${message.reponse}"></span>
+		</span></td>
+	</tr>
+</table>
+
+
+<h2>TRANSACTIONS</h2>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>MessageContent</th>
+		<th>Date</th>
+		<th>sender</th>
+		<th>reciever</th>
+		<th>validé?</th>
+		<th>Valider</th>
+		<th>Rejeter</th>
+	
+	</tr>
+	<tr th:each="transaction : ${transactions}">
+		<td th:text="${transaction.id}" />
+		<td th:text="${transaction.messageContent}" />
+		<td th:text="${transaction.date}" />
+		<td th:text="${transaction.sender.username}" />
+		<td th:text="${transaction.reciever.username}" />
+		<td th:text="${transaction.valide}" />
+		<td><span th:if="${!transaction.valide}">
+				<form th:action="@{'/admin/validertransaction?id=' + ${transaction.id}}"
+					method="POST">
+					<input type="submit" value="Valider">
+				</form>
+			</span> 
+		</td>
+		<td><span th:if="${!transaction.rejet && !transaction.valide}">
+				<form th:action="@{'/admin/rejetertransaction?id=' + ${transaction.id}}"
+					method="POST">
+					<input type="submit" value="Rejeter">
+				</form>
+			</span> 
+		</td>
+
+	</tr>
+</table>
+
+
+
+
+
+<h2>Utilisateur</h2>
+<table>
+	<tr>
+		<th>Id</th>
+		<th>Username</th>
+		<th>balance</th>
+		<th>actif</th>
+		<th>desactiver</th>
+		<th>confirmer statut</th>
+
+	</tr>
+	<tr th:each="user : ${utilisateurs}">
+		<td th:text="${user.id}" />
+		<td th:text="${user.username}" />
+		<td th:text="${user.balance}" />
+		<td th:text="${user.actif}" />
+		<td><span th:if="${user.actif}">
+				<form th:action="@{'/admin/desactiveruser?id=' + ${user.id}}"
+					method="POST">
+					<input type="submit" value="Desactiver">
+				</form>
+			</span> 
+		</td>
+		<td><span th:if="${!user.confirmer}">
+				<form th:action="@{'/admin/confirmeruser?id=' + ${user.id}}"
+					method="POST">
+					<input type="submit" value="Confirmer">
+				</form>
+			</span> 
+		</td>
+	</tr>
+</table>
+

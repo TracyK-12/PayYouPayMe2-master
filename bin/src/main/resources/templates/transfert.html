@@ -1,0 +1,32 @@
+<div th:replace="~{fragments/menu :: menuPrincipal}"></div>
+<h2>Transferts</h2>
+
+
+
+<div th:text="'balance : ' + ${utilisateur.balance}"></div>
+ 
+<form th:action="@{/transfert/createTransfert}" method="POST">
+	<input type="text" name="content" value = "message"> 
+	<input type="number" name="amount" value = "0">
+	
+	<input type="submit" value="Creation tranfert">
+</form> 
+ 
+
+
+<h2>Liste transferts effectués</h2>
+<table>
+	<tr>
+		<th>ID</th>
+		<th>amount</th>
+		<th>message</th>
+		<th>date</th>
+	</tr>
+	
+	<tr th:each="transfert : ${utilisateur.transferts}">
+		<td th:text="${transfert.id}"></td>
+		<td th:text="${transfert.amount}"></td>
+		<td th:text="${transfert.messageContent}"></td>
+		<td th:text="${transfert.date}"></td>
+	</tr>
+</table>
